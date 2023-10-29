@@ -1,0 +1,358 @@
+/* # Front-end Style Guide ##
+    
+ Layout The designs were created to the following widths:
+    - Mobile: 375px 
+    - Desktop: 1440px 
+    
+## Colors 
+    
+    ### Primary 
+    
+    #### Text 
+      - Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%) 
+      - Moderate Violet (chat on the left): hsl(276, 55%, 52%) 
+      - Desaturated Dark Violet (chat on the right): hsl(271, 15%, 43%) 
+      - Grayish Blue (placeholder text): hsl(206, 6%, 79%) 
+      - Very Dark Desaturated Violet (main heading): hsl(271, 36%, 24%) 
+      - Dark Grayish Violet (paragraph): hsl(270, 7%, 64%) 
+    
+    #### Gradients 
+    
+    These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: 
+    - Light Magenta: hsl(293, 100%, 63%) 
+    - Light Violet: hsl(264, 100%, 61%) 
+    
+    ### Secondary 
+    - White: hsl(0, 0%, 100%) 
+    - Light Grayish Violet (app background): hsl(270, 20%, 96%) 
+    - Very Dark Desaturated Violet (submit button background): hsl(271, 36%, 24%) 
+    - Very Light Magenta (radio button outline): hsl(289, 100%, 72%) 
+    
+    ## Typography 
+    
+    ### Body Copy 
+    - Font size: 16px 
+    
+    ### Font 
+    - Family: [Rubik](https: //fonts.google.com/specimen/Rubik)
+      - Weights: 400, 500, 700
+     */
+
+html {
+  font-size: 55%;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  background-color: hsl(270, 20%, 96%);
+  position: relative;
+  margin: 0;
+  padding-top: 10rem;
+
+  /* height: 100vh; */
+}
+
+button {
+  background-color: hsl(271, 36%, 24%);
+  border: none;
+  border-radius: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  right: 1.2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+ion-icon {
+  color: hsl(270, 20%, 96%);
+  /* height: 3.2rem; */
+}
+
+.rec {
+  background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  /* padding: 13rem 19rem; */
+  /* transform: rotate(90deg); */
+  position: fixed;
+  /* width: 20rem; */
+  top: 0;
+  left: -9rem;
+  z-index: -999;
+  height: 90%;
+  width: 29%;
+  border-bottom-left-radius: 50rem;
+  border-bottom-right-radius: 50rem;
+
+}
+
+.rec-2 {
+  background-color: hsl(275, 52%, 94%);
+  position: fixed;
+  bottom: 0;
+  right: -20rem;
+  z-index: -999;
+  height: 90%;
+  width: 32.5%;
+  border-top-right-radius: 50rem;
+  border-top-left-radius: 50rem;
+}
+
+.text {
+  position: relative;
+}
+
+/* p{
+  display: block;
+} */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  gap: 0;
+  margin-bottom: 9.6rem;
+}
+
+.white {
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  width: 20rem;
+  height: 4rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-radius: 1.5rem;
+  top: -1rem;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 99999;
+}
+
+.phone {
+  background-color: hsl(270, 20%, 96%);
+  border: 3rem solid hsl(0, 0%, 100%);
+  border-radius: 7rem;
+  width: 60%;
+  padding: 2.4rem;
+  padding-top: 13rem;
+  /* padding: 3.2rem 2.4rem; */
+  position: relative;
+}
+
+.heading {
+  background: linear-gradient(to right,
+      hsl(264, 100%, 61%),
+      hsl(293, 100%, 63%));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4rem;
+  padding: 4.8rem 3.2rem 3.2rem 3.2rem;
+  border-radius: 3.2rem;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.head-fl {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+}
+
+.samuel-img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border: 0.2rem solid hsl(270, 20%, 96%);
+  border-radius: 50%;
+}
+
+.samuel-name {
+  color: hsl(269, 63%, 92%);
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.walk {
+  color: hsl(276, 100%, 81%);
+  margin: 0;
+}
+
+.dog {
+  height: 6.4rem;
+  border-radius: 1.2rem;
+}
+
+.dog-fl {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.2rem;
+  justify-content: flex-start;
+}
+
+.samuel {
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(291, 42%, 94%);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  border-bottom-left-radius: 0.5rem;
+  width: 71%;
+
+  /* display: inline-block; */
+}
+
+.owner {
+  color: hsl(271, 15%, 43%);
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  border-bottom-right-radius: 0.5rem;
+  width: 71%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.it {
+  width: 40%;
+}
+
+.price {
+  color: hsl(270, 20%, 96%);
+  font-weight: 600;
+}
+
+.flex {
+  background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  display: flex;
+  /* gap: 2.4rem; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  margin-top: 2.4rem;
+  border-radius: 1.2rem;
+  border-bottom-left-radius: 0.5rem;
+  width: 71%;
+}
+
+.flex-1 {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.radio-btn {
+  box-sizing: border-box;
+  background: transparent;
+  color: #222;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.radio-btn input {
+  appearance: none;
+  background-color: transparent;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0.1rem solid hsl(289, 100%, 72%);
+  margin: 0;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.radio-btn input::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: 50%;
+  transform: scale(0);
+  transition: 0.3s transform ease-in-out;
+  box-shadow: inset 6px 6px transparent;
+}
+
+.radio-btn input:checked {
+  background-color: transparent;
+
+}
+
+.radio-btn input:checked::before {
+  transform: scale(1);
+}
+
+.radio:not(:last-child) {
+  margin-right: 0.6rem;
+}
+
+.flex-1 p,
+.flex-1 input {
+  margin: 0;
+}
+
+.flex-1 p {
+  color: hsl(276, 100%, 81%);
+}
+
+/* .flex-1 input {
+  appearance: none;
+  border: 0.3rem solid hsl(289, 100%, 72%);
+  cursor: pointer;
+} */
+
+
+.type {
+  padding: 1.2rem;
+  display: block;
+  margin-top: 2.4rem;
+  border-radius: 4.8rem;
+  border: none;
+  width: 90%;
+}
+
+.type::placeholder {
+  color: hsl(206, 6%, 79%);
+  font-size: 1.3rem;
+}
+
+.info {
+  width: 78%;
+  justify-self: end;
+}
+
+h1 {
+  color: hsl(271, 36%, 24%);
+  font-weight: 700;
+}
+
+.info p {
+  color: hsl(270, 7%, 64%);
+  line-height: 1.5;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
